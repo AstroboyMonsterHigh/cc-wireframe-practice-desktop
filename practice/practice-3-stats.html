@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stats Bar Practice</title>
+    <style>
+        /* CSS will go here */
+        body {
+            background-color: #E6E3E4;
+        }
+        
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            
+            .stat-box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2px;
+                min-width: 170px;
+                min-height: 45px;;
+                border: 1px solid black;
+                background-color: white;
+                
+                p {
+                    margin: 0px;
+                }
+                
+                .stat-title {
+                    font-size: 1.05rem;
+                }
+                
+                .stat-value {
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                }
+                
+                .stat-desc {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="stats-container">
+        <div class="stat-box">
+            <p class="stat-title">PROJECTS</p>
+            <p class="stat-value">128</p>
+            <p class="stat-desc">Projects</p>
+        </div>
+        <div class="stat-box">
+            <p class="stat-title">FOLLOWERS</p>
+            <p class="stat-value">1.2k</p>
+            <p class="stat-desc">Followers</p>
+        </div>
+        <div class="stat-box">
+            <p class="stat-title">FOLLOWING</p>
+            <p class="stat-value">45</p>
+            <p class="stat-desc">Following</p>
+        </div>
+    </section>
+
+</body>
+</html>

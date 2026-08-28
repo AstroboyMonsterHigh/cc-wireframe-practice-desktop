@@ -10,31 +10,29 @@
 }
 
 
-header {
+.navbar {
     display: flex;
     justify-content: space-between;
-    
-    .logo {
-        justify-content: flex-start;
-    }
-    
-    input {
-        justify-content: center;
-        align-items: center; 
-    }
-    
-    a {
-        justify-content: flex-end;
-    }
 }
 
 .profile {
     display: flex;
     flex-direction: column;
     background-color: grey;
+    gap: 10px;
+    padding: 10px;
+    
+    .profile-image {
+        border: 1px solid red;
+        background-color: white;
+        border-radius: 50% 50%;
+        height: 120px;
+        width: 120px;
+    }
     
     img, h2, article, button {
         align-self: center;
+        margin: 0px;
     }
 }
 
@@ -45,9 +43,24 @@ header {
     
     .int-box {
         border: 1px solid black;
+        min-width: 180px;
+        min-height: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         
         p {
-            justify-content: center;
+            margin: 0px;
+        }
+        
+        .stat-value {
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        
+        .stat-desc {
+            font-size: 0.9rem;
         }
     }
 }

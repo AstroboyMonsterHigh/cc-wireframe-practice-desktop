@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Section Practice</title>
+    <style>
+        /* CSS will go here */
+        section {
+            border: 1px solid blue;
+            background-color: hsla(341, 0%, 92%, .8);
+        }
+        
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* Set gaps for all in block */
+            gap: 12px;
+            padding: 24px 0;
+        }
+        
+        .avatar { 
+            width: 120px;
+            height: 120px;
+            border: 1px solid black;
+            border-radius: 50%;
+            background-color: white;
+            /* center placeholder */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .profile h2, .profile .subtitle {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="profile">
+        <div class="avatar">[AVATAR IMG]</div>
+        <h2>USER NAME</h2>
+        <p class="subtitle">JOB TITLE / LOCATION</p>
+        <button type="button">[EDIT PROFILE BUTTON]</button>
+    </section>
+
+</body>
+</html>
+

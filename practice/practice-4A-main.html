@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Content Practice</title>
+    <style>
+        /* CSS will go here */
+        .main-layout {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .bio-column, .feed-column {
+            min-width: 50%;
+        }
+        
+        .bio-column {
+            border: 1px solid black;
+            padding: 0px 15px;
+        }
+        
+        .feed-column {
+            border: 1px solid blue;
+        }
+        
+        .activity-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: hsl(341, 0%, 91%);
+            border: 1px solid black;
+        }
+        
+        .activity-left {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .activity-icon {
+            border: 1px solid red;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            margin: 10px;
+        }
+        
+        .activity-info {
+            margin: 10px;
+        }
+        
+        .activity-info p{
+            margin: 0px;
+        }
+        
+        .activity-date {
+            display: flex;
+            align-self: flex-start;
+            margin: 10px;
+        }
+        
+        .projects-grid {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        
+        .project-card {
+            border: 1px solid black;
+            background-color: hsl(341, 0%, 91%);
+            margin: 10px;
+            min-width: 100px;
+            min-height: 50px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-items: content: '';
+            
+            p {
+                margin: 0px;
+            }
+        }
+        
+        .project-desc {
+        }
+    </style>
+</head>
+<body>
+
+    <main class="main-layout">
+    
+        <!-- Left Column -->
+        <section class="bio-column">
+            <h3>BIO</h3>
+            <p>The CSS justify-content property controls the alignment and distribution of space between and around flex or grid items along the main axis of the container.  It is applied to the parent element (with display: flex or display: grid) and determines how remaining space is distributed when items do not fill the entire container. </p>
+            <h3>SKILLS</h3>
+            <ul>
+                <li>Skill 1</li>
+                <li>Skill 2</li>
+                <li>Skill 3</li>
+                <li>Skill 4</li>
+            </ul>
+        </section>
+
+        <!-- Right Column -->
+        <section class="feed-column">
+            <h3>ACTIVITY FEED</h3>
+            <!-- card   -->
+            <div class="activity-card">
+                <!--  combined image and text -->
+                <section class="activity-left">
+                    <div class="activity-icon">
+                        <img src="" alt="ICON">
+                    </div>
+                    <div class="activity-info">
+                        <p>Activity Title</p>
+                        <p>Description</p>
+                    </div>
+                </section>
+                <!--  date text -->
+                <p class="activity-date">Date</p>
+            </div>
+            <br>
+            <div class="activity-card">
+                <!--  combined image and text -->
+                <section class="activity-left">
+                    <div class="activity-icon">
+                        <img src="" alt="ICON">
+                    </div>
+                    <div class="activity-info">
+                        <p>Activity Title</p>
+                        <p>Description</p>
+                    </div>
+                </section>
+                <!--  date text -->
+                <p class="activity-date">Date</p>
+            </div>
+            <br>
+            <div class="activity-card">
+                <!--  combined image and text -->
+                <section class="activity-left">
+                    <div class="activity-icon">
+                        <img src="" alt="ICON">
+                    </div>
+                    <div class="activity-info">
+                        <p>Activity Title</p>
+                        <p>Description</p>
+                    </div>
+                </section>
+                <!--  date text -->
+                <p class="activity-date">Date</p>
+            </div>
+            <br>
+            
+            <h3>PROJECTS</h3>
+            <div class="projects-grid">
+                <section class="project-card">
+                    <div class="project-desc">
+                        <p>Project 1</p>
+                        <p>Description</p>
+                    </div>
+                </section>
+                <section class="project-card">
+                    <div class="project-desc">
+                        <p>Project 2</p>
+                        <p>Description</p>
+                    </div>
+                </section>
+                <section class="project-card">
+                    <div class="project-desc">
+                        <p>Project 3</p>
+                        <p>Description</p>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
+

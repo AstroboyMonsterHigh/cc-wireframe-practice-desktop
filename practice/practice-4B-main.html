@@ -5,7 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Content Practice - Round 2</title>
     <style>
+        /* CSS mobile defaults will go here */
+        /* Default styles for Mobile (up to 767px) */
+.container {
+  width: 100%;
+  flex-direction: column;
+}
+
+/* Tablet (768px and up) */
+@media (min-width: 768px) {
+  .container {
+    width: 90%;
+    flex-direction: row;
+  }
+}
+
+/* Desktop (1024px and up) */
+@media (min-width: 1024px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}   
+        
         /* CSS will go here */
+        .main-layout {
+            display: flex;
+            justify-content: row;
+        }
+        
+        .bio-column {
+            padding: 10px;
+            min-width: 50%;
+        }
+        
+        .bio-box {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        
+        .bio-desc {
+            h3, p {
+                margin: 0px;
+            }
+        }
+        
+        .skill-desc {
+            margin: 15px 0px;
+            
+            h3, ul {
+                margin: 0px;
+            }
+        }
+        
+        .feed-column {
+            min-width: 50%;
+            padding: 0px 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .activity-card {
+            background-color: #F2F0F1;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: row;
+            min-height: 70px;
+            
+        }
+        
+        .activity-left {
+            display: flex;
+            flex-direction: row;
+            align-content: space-between;
+        }
+        
+        .activity-icon {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            background-color: white;
+            margin: 10px;
+        }
+        
+        .activity-info {
+            margin: 10px 0px;
+        }
+        
+        .activity-info p {
+            margin: 0px;
+        }
+        
+        .activity-right {
+            justify-content: flex-end;
+        }
     </style>
 </head>
 <body>
@@ -14,9 +107,12 @@
     
         <!-- Left Column -->
         <section class="bio-column">
+            <div class="bio-box">
+            <section class="bio-desc">
             <h3>BIO</h3>
-            <p>The CSS justify-content property controls alignment along the main axis of the container.</p>
-            
+            <p>The CSS justify-content property controls the alignment of items along the main axis of a flex or grid container.  It distributes any remaining free space between and around items, using values such as flex-start, center, space-between, space-around, and space-evenly. The specific direction of the main axis is determined by the flex-direction property (horizontal for row, vertical for column). </p>
+            </section>
+            <section class="skill-desc">
             <h3>SKILLS</h3>
             <ul>
                 <li>Skill 1</li>
@@ -24,6 +120,8 @@
                 <li>Skill 3</li>
                 <li>Skill 4</li>
             </ul>
+            </section>
+            </div>
         </section>
 
         <!-- Right Column -->
@@ -31,6 +129,9 @@
             <h3>ACTIVITY FEED</h3>
             
             <div class="activity-card">
+                
+                
+                
                 <section class="activity-left">
                     <div class="activity-icon">
                         <img src="" alt="ICON">
@@ -40,7 +141,14 @@
                         <p>Description</p>
                     </div>
                 </section>
-                <p class="activity-date">Date</p>
+                
+                <section class="activity-right">
+                    <p>Date</p>
+                </section>
+                
+                
+                
+                
             </div>
             
             <h3>PROJECTS</h3>
